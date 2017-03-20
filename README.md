@@ -1,4 +1,5 @@
-# AirBnB Clone
+AirBnB Clone Project (v3)
+=========================
 
 **Purpose**
 
@@ -16,17 +17,8 @@ Command line interpretor can now save objects into a mysql database by setting t
 <h4>first phase</h4>
 Where we are creating a command line interpretor to access objects that will store user data. Users can use the console to create objects, update object attributes, remove objects, list all objects, and store and read data from a .json file. 
 
-----------------------------------------
-
-**Authors**
-- **Philip Yoo**, \<philip.yoo@holbertonschool.com>, @philipYoo10
-- **Jianqin Wang**, \<jianqin.wang@holbertonschool.com>, @jianqinwang94
-- **Anne Cognet**, \<anne.cognet@holbertonschool.com>, @1million40
-- **Richard Sim**, \<richard.sim@holbertonschool.com>, @rdsim8589
-- **Samantha Scislowicz**, \<samantha.scislowicz@holbertonschool.com>, @samscislowicz
-
-----------------------------------------
-
+Usage
+-----
 In order to begin the console, you can run either 'python3 console.py' or './console.py' in the command line.
 
 Classes that are currently supported include BaseModel, User, City, State, Amenity, Review, and Place.
@@ -46,3 +38,13 @@ Additionally, the console also supports the following command formats:
 - **\<class name>.update(\<id>, \<attribute name>, \<attribute value>)**, which will update an instance of the given class and id with the new attribute;
 - **\<class name>.update(\<id>, \<dictionary representation>)**, which will update an instance of the given class and id with a dictionary of key value pairs that will be new attributes for the objects. 
 - **\<class name>.create(<key>=<value>) create an instance of the class
+----------------------------------------
+
+**Authors**
+- **Philip Yoo**, \<philip.yoo@holbertonschool.com>, @philipYoo10
+- **Jianqin Wang**, \<jianqin.wang@holbertonschool.com>, @jianqinwang94
+- **Anne Cognet**, \<anne.cognet@holbertonschool.com>, @1million40
+- **Richard Sim**, \<richard.sim@holbertonschool.com>, @rdsim8589
+- **Samantha Scislowicz**, \<samantha.scislowicz@holbertonschool.com>, @samscislowicz
+
+----------------------------------------
