@@ -16,7 +16,7 @@ def status():
 @app_views.route("/stats/")
 def stats():
     list_models = {"amenities": "Amenity", "cities": "City", "places": "Place",
-                "reviews": "Review", "states": "State", "users": "User"}
+                   "reviews": "Review", "states": "State", "users": "User"}
     dic = {}
     for cls in list_models.keys():
         dic[list_models[cls]] = storage.count(cls)
