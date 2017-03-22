@@ -104,3 +104,28 @@ class FileStorage:
     def close(self):
         """Close a session"""
         self.reload()
+
+    def get(self, cls, id):
+        """
+        returns object based on class name and id
+        """
+        item = self.all(cls)
+        if id is None:
+            return None
+            for k in self.__session.query(self.__models_available[cls]):
+            if k.__dict__['id'] == id:
+                return k
+            else:
+                return None
+
+    def count(self, cls=None):
+        """
+        returns number of objects in storage
+        """
+        i = 0
+        if cls is None:
+            return len(self.all(cls))
+        else:
+            for k in self.__session.query(self.__models_available[cls]):
+                i += 1
+                return i
